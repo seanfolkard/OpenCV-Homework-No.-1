@@ -23,7 +23,7 @@ print(resized_img.shape)
 
 cv2.imshow('Original', img)
 cv2.imshow('Scaled by 50%', resized_img)
-cv2.imshow("Cropped RGB", cropped_img_rgb)
-cv2.imshow("Cropped HSV", cropped_img_hsv)
+cv2.imshow('Cropped RGB', cropped_img_rgb)
+cv2.imshow('Cropped HSV', cropped_img_hsv)
 
 cv2.waitKey(0)
