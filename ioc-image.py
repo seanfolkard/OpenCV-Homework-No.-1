@@ -11,7 +11,7 @@ new_width = int(img.shape[1] * 0.5)
 new_height = int(img.shape[0] * 0.5)
 new_dim = (new_width, new_height)
 
-resized_img = cv2.resize(img, new_dim, interpolation=cv2.INTER_AREA)
+resized_img = cv2.resize(img, new_dim)
 
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
