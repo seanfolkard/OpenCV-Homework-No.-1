@@ -21,9 +21,13 @@ cropped_img_hsv = img_hsv[120:450, 320:700]
 print(img.shape)
 print(resized_img.shape)
 
+# Original Image, window labelled as "Original"
 cv2.imshow('Original', img)
+# Resized Image by 50%, window labelled as "Scaled by 50%"
 cv2.imshow('Scaled by 50%', resized_img)
+# Cropped Image (to a face or any focus inside the image) with RGB Color Channel, window labelled as "Cropped RGB"
 cv2.imshow('Cropped RGB', cropped_img_rgb)
+# Cropped Image (to a face or any focus inside the image) with HSV Color Channel, window labelled as "Cropped HSV"
 cv2.imshow('Cropped HSV', cropped_img_hsv)
 
 cv2.waitKey(0)
